@@ -1,0 +1,100 @@
+.sixth__section {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    height: 650px;
+}
+
+.sixth__section--cell {
+    background-size: cover;
+    background-position-x: 70%;
+    filter: grayscale(1);
+    display: flex;
+    flex-direction: column;
+}
+
+/* .one {
+    background-image: url('./photo-22.png');
+    background-size: 90%;
+    
+}
+
+.two {
+    background-image: url('./photo-20.png');
+}
+
+.three {
+    background-image: url('./photo-18.png');
+}
+
+.four {
+    background-image: url('./photo-16.png');
+}
+
+.five {
+    background-image: url('./photo-21.png');
+}
+
+.six {
+    background-image: url('./photo-14.png');
+}
+
+.seven {
+    background-image: url('./photo-17.png');
+}
+
+.aight {
+    background-image: url('./photo-15.png');
+} */
+
+.sixth__section--coments {
+    margin-left: 20px;
+    margin-right: 50px;
+    opacity: 0;
+    cursor: default;
+}
+
+.coment__name {
+    font-family: "Gagalin";
+    font-size: 14px;
+    text-transform: none;
+    padding-top: 50px;
+    color: #ffffff;
+}
+
+.coment__text {
+    font-family: "UbuntuLight";
+    font-size: 14px;
+    padding-top: 17px;
+    color: #ffffff;
+}
+
+.coment__button {
+    font-family: "UbuntuMedium";
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 17px;
+    padding: 11px 15px;
+    margin-right: 95px;
+    background-color: #2f3234;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* .sixth__section--cell:hover:after {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.85);
+} */
+
+.sixth__section--cell:hover .sixth__section--coments {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+

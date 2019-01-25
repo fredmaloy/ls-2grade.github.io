@@ -1,0 +1,175 @@
+.first__section {
+    
+    background-image: url("../first_section/texture.png"),
+    url("../first_section/video-bg.png");
+    background-size: cover;
+    min-height: 650px;
+    height: 100%;
+    width: 100%;
+}
+
+.header, .header__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 13px;
+}
+.header {
+    position: relative;
+}
+
+.header__logo {
+    padding-right: 55px;
+}
+
+.header__list {
+    justify-content: space-between;
+    width: 670px;
+    padding: 0px 15px;
+    font-family: "UbuntuMedium";
+    font-size: 13px;
+}
+
+.header__list--link {
+    text-decoration: none;
+    text-decoration-color: #ffffff;
+    text-transform:  uppercase;
+}
+
+.no__style--elem {
+    list-style: none;
+}
+
+.header__order--link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 35px;
+    width: 100px;
+    background-color: #e45028;
+    border-radius: 5px;
+}
+
+.header__order--link__text {
+    font-family: "UbuntuMedium";
+    font-size: 13px;
+    color: #ffffff;
+    text-transform:  uppercase;
+    /* width: 66px;
+    height: 9px; */
+}
+
+.header__list--elem {
+    color: #ffffff;
+}
+
+
+.header__list--link {
+    color: #ffffff;
+}
+
+.banner, .arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__text {
+    font-family: "Lifehack Medium";
+    font-size: 65px;
+}
+
+.banner__headline {
+    padding-top: 120px;
+}
+
+.headline {
+    font-family: 'Gagalin';
+    font-size: 72px;
+    margin: 0;
+}
+
+
+.orange__headline {
+    color: #f9b43b;
+}
+
+.banner__text {
+    font-family: "LifehackMedium";
+    font-size: 65px;
+    margin: 0;
+    letter-spacing: -1.6px;
+    color: #ffffff;
+}
+
+.navigation {
+    position: absolute;
+    left: 1000px;
+    top: 65px;
+    z-index: 10;
+}
+
+.navigation__list, .navigation__elem  { 
+    list-style: none;
+}
+
+.navigation__list {
+    position: fixed;
+}
+
+.navigation__elem {
+    content: '';
+    position: relative;
+    width: 6px;
+    height:6px;
+    background-color: #ffffff;
+    margin-top: 15px;
+    border: 1px solid #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.navigation__elem:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    border: 1px solid #ffffff;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+}
+
+.navigation__elem:hover.navigation__elem:after {
+    opacity: 1;
+}
+
+.banner__img {
+    display: flex;
+    align-items: center;
+    position: relative;
+    min-width: 451px;
+}
+
+.banner__drops {
+    content: '';
+    position: absolute;
+    background-image: url("../first_section/drops.png");
+    background-size: cover;
+    top: 43%;
+    left: 43%;
+    transform: translate(-50%, -50%);
+}
+
+.arrow {
+    margin-top: 80px;
+}
+
+
+
+
+
+
