@@ -1,5 +1,4 @@
 .first__section {
-    
     background-image: url("../first_section/texture.png"),
     url("../first_section/video-bg.png");
     background-size: cover;
@@ -80,7 +79,7 @@
 }
 
 .headline {
-    font-family: "gagalin";
+    font-family: 'gagalinregular';
     font-size: 72px;
     margin: 0;
 }
@@ -98,56 +97,9 @@
     color: #ffffff;
 }
 
-.navigation {
-    position: absolute;
-    left: 1000px;
-    top: 65px;
-    z-index: 10;
-}
-
-.navigation__list, .navigation__elem  { 
-    list-style: none;
-}
-
-.navigation__list {
-    position: fixed;
-}
-
-.navigation__elem {
-    content: '';
-    position: relative;
-    width: 6px;
-    height:6px;
-    background-color: #ffffff;
-    margin-top: 15px;
-    border: 1px solid #ffffff;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.navigation__elem:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    height: 16px;
-    width: 16px;
-    border-radius: 50%;
-    border: 1px solid #ffffff;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-}
-
-.navigation__elem:hover.navigation__elem:after {
-    opacity: 1;
-}
-
-.banner__img {
-    display: flex;
-    align-items: center;
-    position: relative;
-    min-width: 451px;
-}
+.arrow {
+    margin-top: 80px;
+}  
 
 .banner__drops {
     content: '';
@@ -157,10 +109,6 @@
     top: 43%;
     left: 43%;
     transform: translate(-50%, -50%);
-}
-
-.arrow {
-    margin-top: 80px;
 }
 
 

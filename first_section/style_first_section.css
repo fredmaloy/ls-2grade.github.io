@@ -6,7 +6,7 @@
 
 .header__logo { padding-right: 55px; }
 
-.header__list { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 670px; padding: 0px 15px; font-family: "UbuntuMedium"; font-size: 13px; }
+.header__list { -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; width: 670px; padding: 0px 15px; font-family: 'ubuntumedium'; font-size: 13px; }
 
 .header__list--link { text-decoration: none; -webkit-text-decoration-color: #ffffff; text-decoration-color: #ffffff; text-transform: uppercase; }
 
@@ -30,20 +30,6 @@
 
 .banner__text { font-family: 'lifehackmedium'; font-size: 65px; margin: 0; letter-spacing: -1.6px; color: #ffffff; }
 
-.navigation { position: absolute; left: 1000px; top: 65px; z-index: 10; }
-
-.navigation__list, .navigation__elem { list-style: none; }
-
-.navigation__list { position: fixed; }
-
-.navigation__elem { content: ''; position: relative; width: 6px; height: 6px; background-color: #ffffff; margin-top: 15px; border: 1px solid #ffffff; border-radius: 50%; cursor: pointer; }
-
-.navigation__elem:after { content: ''; position: absolute; top: 50%; left: 50%; height: 16px; width: 16px; border-radius: 50%; border: 1px solid #ffffff; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 0; }
-
-.navigation__elem:hover.navigation__elem:after { opacity: 1; }
-
-.banner__img { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; position: relative; min-width: 451px; }
+.arrow { margin-top: 80px; }
 
 .banner__drops { content: ''; position: absolute; background-image: url("../first_section/drops.png"); background-size: cover; top: 43%; left: 43%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
-
-.arrow { margin-top: 80px; }

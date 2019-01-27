@@ -20,41 +20,50 @@
   -ms-flex-direction: column;
   flex-direction: column;
   overflow: hidden; }
-  .sixth__section--cell .sixth__section--background {
-    display: block;
-    position: relative; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image1 {
-      position: absolute;
-      top: -30px;
-      left: 0px; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image2 {
-      position: absolute;
-      top: -80px;
-      left: -272px; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image3 {
-      position: absolute;
-      top: -30px;
-      left: -325px; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image4 {
-      position: absolute;
-      top: -200px;
-      left: -470px; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image5 {
-      position: absolute;
-      top: -5px;
-      left: 0px; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image6 {
-      position: absolute;
-      top: -5px;
-      left: -187px; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image7 {
-      position: absolute;
-      top: -5px;
-      left: -125px; }
-    .sixth__section--cell .sixth__section--background .sixth__section--background__image8 {
-      position: absolute;
-      top: -3px;
-      left: -167px; }
+
+.sixth__section--background {
+  display: block;
+  position: relative; }
+
+.sixth__section--background__image1 {
+  position: absolute;
+  top: -30px;
+  left: 0px; }
+
+.sixth__section--background__image2 {
+  position: absolute;
+  top: -80px;
+  left: -272px; }
+
+.sixth__section--background__image3 {
+  position: absolute;
+  top: -30px;
+  left: -325px; }
+
+.sixth__section--background__image4 {
+  position: absolute;
+  top: -200px;
+  left: -470px; }
+
+.sixth__section--background__image5 {
+  position: absolute;
+  top: -5px;
+  left: 0px; }
+
+.sixth__section--background__image6 {
+  position: absolute;
+  top: -5px;
+  left: -187px; }
+
+.sixth__section--background__image7 {
+  position: absolute;
+  top: -5px;
+  left: -125px; }
+
+.sixth__section--background__image8 {
+  position: absolute;
+  top: -3px;
+  left: -167px; }
 
 .sixth__section--coments {
   position: absolute;
@@ -67,20 +76,20 @@
   cursor: default; }
 
 .coment__name {
-  font-family: "Gagalin";
+  font-family: 'gagalinregular';
   font-size: 14px;
   text-transform: none;
   /* padding-top: 50px; */
   color: #ffffff; }
 
 .coment__text {
-  font-family: "UbuntuLight";
+  font-family: 'ubuntulight';
   font-size: 14px;
   padding-top: 17px;
   color: #ffffff; }
 
 .coment__button {
-  font-family: "UbuntuMedium";
+  font-family: 'ubuntumedium';
   font-size: 13px;
   text-transform: uppercase;
   color: #ffffff;
