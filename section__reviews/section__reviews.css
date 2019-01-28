@@ -1,4 +1,4 @@
-.sixth__section {
+.section__reviews {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 25% 25% 25% 25%;
@@ -7,7 +7,7 @@
   grid-template-rows: 50% 50%;
   height: 650px; }
 
-.sixth__section--cell {
+.section__reviews--cell {
   background-size: cover;
   background-position-x: 70%;
   -webkit-filter: grayscale(1);
@@ -21,51 +21,51 @@
   flex-direction: column;
   overflow: hidden; }
 
-.sixth__section--background {
+.section__reviews--background {
   display: block;
   position: relative; }
 
-.sixth__section--background__image1 {
+.section__reviews--background__image1 {
   position: absolute;
   top: -30px;
   left: 0px; }
 
-.sixth__section--background__image2 {
+.section__reviews--background__image2 {
   position: absolute;
   top: -80px;
   left: -272px; }
 
-.sixth__section--background__image3 {
+.section__reviews--background__image3 {
   position: absolute;
   top: -30px;
   left: -325px; }
 
-.sixth__section--background__image4 {
+.section__reviews--background__image4 {
   position: absolute;
   top: -200px;
   left: -470px; }
 
-.sixth__section--background__image5 {
+.section__reviews--background__image5 {
   position: absolute;
   top: -5px;
   left: 0px; }
 
-.sixth__section--background__image6 {
+.section__reviews--background__image6 {
   position: absolute;
   top: -5px;
   left: -187px; }
 
-.sixth__section--background__image7 {
+.section__reviews--background__image7 {
   position: absolute;
   top: -5px;
   left: -125px; }
 
-.sixth__section--background__image8 {
+.section__reviews--background__image8 {
   position: absolute;
   top: -3px;
   left: -167px; }
 
-.sixth__section--coments {
+.section__reviews--coments {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -104,5 +104,5 @@
     opacity: 1;
     background-color: rgba(0, 0, 0, 0.85);
 } */
-.sixth__section--cell:hover .sixth__section--coments {
+.section__reviews--cell:hover .section__reviews--coments {
   opacity: 1; }

@@ -1,4 +1,4 @@
-.second__section {
+.section__advertising {
     background-image: url('./bg.png');
     background-size: cover;
     min-height: 650px;
@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.black__headline, .second__section--list {
+.black__headline, .section__advertising--list {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -17,11 +17,11 @@
     padding-top: 133px;
 }
 
-.second__section--list {
+.section__advertising--list {
     padding-top: 55px;
 }
 
-.second__section--list__elem {
+.section__advertising--list__elem {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -29,12 +29,12 @@
     padding-right: 35px;
 }
 
-.second__section--list__headline {
+.section__advertising--list__headline {
     font-family: "LifehackMedium";
     font-size: 24px;
 }
 
-.second__section--list__elem--text {
+.section__advertising--list__elem--text {
     font-family: "UbuntuLight";
     font-size: 14px;
 }
