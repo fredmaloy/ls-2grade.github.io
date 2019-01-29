@@ -1,6 +1,7 @@
 .section__reviews {
     height: 100vh;
 }
+
 .reviews__list {
     display: flex;
     flex-wrap: wrap;
@@ -14,6 +15,16 @@
 .section__reviews--cell {
     width: 25%;
     height: 50%;
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: grayscale(100%);
+
+    &:hover {
+        .section__reviews--coments {
+            opacity: 1;
+        }
+    }
 }
 
 .section__reviews--coments {
@@ -24,6 +35,7 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     opacity: 0;
+    transition: opacity 0.3s;
     cursor: default;
 }
 

@@ -1,13 +1,13 @@
 
 
-@import "css/normalize.scss";
+@import "normalize.scss";
 
-@import "css/font.scss";
+@import "font.scss";
 
-@import "css/base.css";
-@import "css/navigation.scss";
+@import "base.css";
+@import "navigation.scss";
 
-@import "section__burger/section__burger.scss";
-@import "section__advertising/section__advertising.scss";
-@import "section__reviews/section__reviews.scss";
+@import "../section__burger/section__burger.scss";
+@import "../section__advertising/section__advertising.scss";
+@import "../section__reviews/section__reviews.scss";
 
