@@ -1,8 +1,14 @@
 .section__reviews {
+    height: 100vh;
+}
+.reviews__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 }
 
 .section__reviews--cell {
@@ -25,7 +31,6 @@
     font-family: 'gagalinregular';
     font-size: 14px;
     text-transform: none;
-    /* padding-top: 50px; */
     color: #ffffff;
 }
 
@@ -47,7 +52,4 @@
     background-color: #2f3234;
     border-radius: 5px;
     cursor: pointer;
-}
-.reviews__list {
-    list-style: none;
 }

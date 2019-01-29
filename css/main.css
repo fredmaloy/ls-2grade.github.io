@@ -110,7 +110,7 @@ template { display: none; }
 
 @font-face { font-family: 'lifehackmedium'; src: url("./lifehack_medium.woff2") format("woff2"), url("./lifehack_medium.woff") format("woff"); font-weight: normal; font-style: normal; }
 
-@font-face { font-family: 'gagalinregular'; src: url("./gagalin-regular.woff2") format("woff2"), url("./gagalin-regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'gagalinregular'; src: url("../fonts/gagalin-regular.woff2") format("woff2"), url("../fonts/gagalin-regular.woff") format("woff"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'ubuntubold'; src: url("./ubuntu-b.woff2") format("woff2"), url("./ubuntu-b.woff") format("woff"); font-weight: normal; font-style: normal; }
 
@@ -182,18 +182,18 @@ template { display: none; }
 
 .section__advertising--list__elem--text { font-family: "UbuntuLight"; font-size: 14px; }
 
-.section__reviews { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; min-height: 100vh; }
+.section__reviews { height: 100vh; }
+
+.reviews__list { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; width: 100%; height: 100%; list-style: none; margin: 0; padding: 0; }
 
 .section__reviews--cell { width: 25%; height: 50%; }
 
 .section__reviews--coments { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); transform: translate(-50%, -50%); opacity: 0; cursor: default; }
 
-.coment__name { font-family: 'gagalinregular'; font-size: 14px; text-transform: none; /* padding-top: 50px; */ color: #ffffff; }
+.coment__name { font-family: 'gagalinregular'; font-size: 14px; text-transform: none; color: #ffffff; }
 
 .coment__text { font-family: 'ubuntulight'; font-size: 14px; padding-top: 17px; color: #ffffff; }
 
 .coment__button { font-family: 'ubuntumedium'; font-size: 13px; text-transform: uppercase; color: #ffffff; margin-top: 17px; padding: 11px 15px; margin-right: 95px; background-color: #2f3234; border-radius: 5px; cursor: pointer; }
-
-.reviews__list { list-style: none; }
 
 /*# sourceMappingURL=main.css.map */
