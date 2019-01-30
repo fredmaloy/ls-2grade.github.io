@@ -518,7 +518,7 @@ template {
   transform: translate(-50%, -50%); }
 
 .section__advertising {
-  background-image: url("../section__advertising/bg.png");
+  background-image: url("../section__advertising/bg.jpg");
   background-size: cover;
   min-height: 100vh;
   height: 100%;
