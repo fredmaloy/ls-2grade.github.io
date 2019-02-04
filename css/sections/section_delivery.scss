@@ -1,0 +1,215 @@
+.section__delivery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.delivery__form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    font-family: 'Ubuntu-Light';
+    font-size: rem(13px);
+    color: #ffffff;
+    padding-top: rem(45px);
+
+    @include tablets {
+       flex-direction: column;
+       align-items: center;
+      }
+    
+      @include phones {
+        flex-direction: column;
+        align-items: center;
+      }
+}
+
+.delivery__form-name-phone {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.delivery__form-street {
+    padding-top: rem(20px);
+}
+
+.delivery__form-adress {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: rem(20px);
+}
+
+.input {
+    margin-top: rem(10px);
+    height: rem(35px);
+    border: none;
+    border-radius: rem(5px);
+    margin-right: rem(25px); 
+    appearance: none; 
+    text-indent: rem(20px);
+}
+
+.adress__input {
+    width: rem(100px);
+}
+
+.street__input {
+    min-width: rem(480px);
+}
+
+.name__input, .phone__input {
+    min-width: rem(227px);
+    -webkit-appearance: none;
+}
+
+.delivery__form-right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    @include tablets {
+       padding-top: rem(20px);
+       }
+     
+       @include phones {
+        padding-top: rem(20px);
+       }
+}
+
+.coment__content {
+    margin-top: rem(10px);
+    width: rem(470px);
+    height: rem(113px);
+    border: none;
+    border-radius: rem(5px);
+    resize: none;
+    text-indent: rem(20px);
+    color: #000000;
+    margin-right: rem(25px);
+}
+
+.delivery__form-radio__btn, .delivery__form-send {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: rem(20px);
+}
+
+.change__input, .dtcall__input {
+    display: none;
+}
+
+.radio__btn-dtcall {
+    margin-top: rem(30px);
+}
+
+.btn-send__clean {
+    margin-left: rem(20px);
+}
+
+.btn {
+    padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+   
+
+    &__deliver {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: none;
+        color: #ffffff;
+        font-size: rem(13px);
+        text-transform: uppercase;
+        height: rem(35px);
+        width: rem(100px);
+        background-color: #e45028;
+        border-radius: rem(5px);
+        cursor: pointer;
+
+        &:hover {
+            background-color: #c1401e;
+        }
+    }
+}
+
+
+.btn__change-check, .radio__btn-dtcall, .btn__dtcall-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding-left: rem(20px);
+}
+
+.btn__dtcall-title, .btn__change-title {
+    padding-left: rem(10px);
+}
+
+.btn__change-check-see {
+    position: relative;
+    content: '';
+    width: rem(14px);
+    height: rem(14px);
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(7px);
+        height: rem(7px);   
+        border-radius: 50%;
+        background-color: #e45028;
+        opacity: 0; 
+    }
+}
+
+.change__input:checked + .btn__change-check .btn__change-check-see:after {
+    opacity: 1;
+}
+
+.btn__dtcall-check-see {
+    position: relative;
+    content: '';
+    width: rem(14px);
+    height: rem(14px);
+    background-color: #ffffff;
+
+    &:after {
+        position: absolute;
+        content: '';
+        background-image: url('../section_delivery/check_deliver.jpg');
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(11px);
+        height: rem(9px);   
+        opacity: 0;
+    }
+    
+}
+
+.dtcall__input:checked + .btn__dtcall-check .btn__dtcall-check-see:after {
+    opacity: 1;
+}
+
+.input:focus,
+.text:focus {
+    border: rem(1px) solid #e45028;
+}

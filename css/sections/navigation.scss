@@ -1,5 +1,13 @@
 .navigation__list, .navigation__elem  { 
     list-style: none;
+
+    @include tablets {
+        display: none;
+      }
+    
+      @include phones {
+        display: none;
+      } 
 }
 
 .navigation__list {
@@ -38,12 +46,6 @@
     opacity: 1;
 }
 
-.banner__img {
-    display: flex;
-    align-items: center;
-    position: relative;
-    min-width: 451px;
-}
 
 
 

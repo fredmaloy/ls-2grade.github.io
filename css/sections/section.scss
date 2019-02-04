@@ -1,0 +1,54 @@
+.section {
+    position: relative;
+    margin: 0 auto;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+
+
+
+        &__burger {
+            background-image: url("../../img/texture.png"),
+            url("../../img/video-bg.png");
+            /* display: flex;
+            flex-direction: column;
+            justify-content: space-between; */
+        }
+
+        &__advertising {
+            background-image: url('../../img/bg.jpg');
+            /* display: flex;
+            flex-direction: column;
+            justify-content: center; */
+        }
+
+        &__menu {
+            background-image: url('../../img/bg_menu.jpg');
+        }
+
+        &__team {
+            background-image: url('../../img/bg_team.jpg');
+        }
+
+        &__delivery {
+            background-image: url('../../img/bg_delivery.jpg');
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+        }
+
+        &__map {
+            background-image: url('../../img/bg_map.jpg');
+        }
+
+}
+
+.section__container {
+    width: 100%;
+    max-width: 940px;
+    padding: 0 20px;
+    margin: 0 auto;
+} 

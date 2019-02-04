@@ -1,0 +1,83 @@
+.banner,
+.arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    @include tablets {
+        max-height: 80vh ;
+        flex-direction: column;
+    }
+    @include phones {
+        max-height: 80vh;
+        flex-direction: column;
+    }
+}
+
+.banner__headline {
+    padding-top: rem(120px);
+    @include tablets {
+        padding-top: rem(50px);
+    }
+    @include phones {
+        padding-top: rem(30px);
+    }
+}
+
+.headline {
+    font-family: 'Gagalin-Regular';
+    font-size: rem(72px);
+    margin: 0;
+    @include phones {
+        text-align: center;
+    }
+}
+
+.orange__headline {
+    color: #f9b43b;
+    @include phones {
+        text-align: center;
+        font-size: rem(50px);
+    }
+}
+
+.banner__text {
+    font-family: 'Lifehack-Medium';
+    font-size: rem(65px);
+    margin: 0;
+    letter-spacing: rem(-1.5px);
+    color: #ffffff;
+    @include tablets {
+        text-align: center;
+    }
+    @include phones {
+        text-align: center;
+    }
+}
+
+.arrow {
+    margin-bottom: 5vh;
+    @include tablets {
+        margin-top: rem(50px);
+    }
+    @include phones {
+        margin-top: rem(50px);
+    }
+}
+
+.banner__drops {
+    content: '';
+    position: absolute;
+    background-image: url("../first_section/drops.png");
+    background-size: cover;
+    top: 43%;
+    left: 47%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.banner__img {
+    position: relative;
+    max-width: 100%;
+}

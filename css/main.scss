@@ -1,13 +1,19 @@
 
 
-@import "normalize.scss";
+@import "./_misc/normalize.scss";
 
-@import "font.scss";
+@import "./_misc/font.scss";
 
-@import "base.css";
-@import "navigation.scss";
+@import "./_misc/base.scss";
+@import "./sections/navigation.scss";
+@import "./sections/section.scss";
 
-@import "../section__burger/section__burger.scss";
-@import "../section__advertising/section__advertising.scss";
-@import "../section__reviews/section__reviews.scss";
-
+@import "./sections/header.scss";
+@import "./sections/section__burger.scss";
+@import "./sections/section__advertising.scss";
+@import "./sections/section__reviews.scss";
+@import "./sections/section_menu.scss";
+@import "./sections/section_team.scss";
+@import "./sections/section_delivery.scss";
+@import "./sections/section_map.scss";
+@import "./sections/footer.scss";
