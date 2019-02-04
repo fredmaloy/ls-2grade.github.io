@@ -9,7 +9,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
+    align-content: flex-start;
     padding: 20vh 15vh;
 
     @include tablets {
@@ -29,6 +29,10 @@
 .accirdion__team-list {
     list-style: none;
     padding-left: rem(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
 
     @include tablets {
        display: flex;
@@ -47,20 +51,20 @@
 .accirdion__team-list__name {
     padding-bottom: rem(18px);
     font-family: 'Gagalin-Regular';
+}
 
-    
+.list__name-marker {
+    position: relative;
+    font-family: 'Gagalin-Regular';
+
     &:before {
         content: '';
         position: absolute;
-        top: rem(42px);
-        left: 25%;
+        top: rem(10px);
+        left: -15%;
         border: 4.5px solid transparent;
         border-top: 4.5px solid #f9b43b;
-         
-           @include phones {
-            left: 18%;
-           }
-    }
+        }
 }
 
 .accirdion__team-list__elem {
@@ -79,7 +83,7 @@
        }
 
 
-    &.team__elem-active .accirdion__team-list__name:before {
+    &.team__elem-active .list__name-marker:before {
         transform: rotate(-180deg);
         transition: linear 0.3s; 
     }

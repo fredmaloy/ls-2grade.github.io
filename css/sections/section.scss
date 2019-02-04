@@ -19,9 +19,8 @@
 
         &__advertising {
             background-image: url('../../img/bg.jpg');
-            /* display: flex;
-            flex-direction: column;
-            justify-content: center; */
+            display: flex;
+            align-items: center;
         }
 
         &__menu {
