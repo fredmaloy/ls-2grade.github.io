@@ -4,6 +4,7 @@
     @include tablets {
         flex-direction: column;
         align-items: center;
+        justify-content: center;
         text-align: center;
         padding: 0 20%;
     }
@@ -11,13 +12,12 @@
     @include phones {
        flex-direction: column;
        align-items: center;
-       text-align: center;
+       justify-content: center;
        padding: 0 20%;
     }
 }
 
 .banner__img {
-    float: left;
     position: relative;
     width: 50%;
 
@@ -42,8 +42,8 @@
     position: absolute;
     background-image: url("../first_section/drops.png");
     background-size: cover;
-    top: 17%;
-    left: -7%;
+    top: 16%;
+    left: 0;
     max-width: 100%;
 
     @include tablets {                                   
@@ -54,10 +54,17 @@
     }
 }
 
+.banner__img-burger {
+    
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .banner__headline {
     float: left;
-    padding-top: rem(120px);
+    padding-top: rem(132px);
+    margin-left: rem(-20px);
     width: 50%;
 
     @include tablets {
@@ -119,6 +126,12 @@
     @include phones {
         margin-top: rem(50px);
     }
+}
+
+.arrow__scroll-icon {
+    fill: #ffffff;
+    width: rem(29px);
+    height: rem(14px);
 }
 
 

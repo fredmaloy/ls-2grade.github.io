@@ -2,18 +2,35 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     max-width: 940px;
     margin: 0 auto;
+    height: auto;
 }
 
-.black__headline, .section__advertising-list {
+ .section__advertising-list {
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: flex-start;
     list-style: none;
-    padding-top: 35px;
+    padding-top: rem(35px);
+    
+      @include phones {
+        flex-direction: column;
+        /* align-content: space-between; */
+        justify-content: flex-start;
+        height: 100%;
+      }
 }
 
+.black__headline {
+    
+
+    @include phones {
+        /* padding-top: rem(30px); */
+      }
+}
 
 .section__advertising-list__elem {
     display: flex;
@@ -22,6 +39,12 @@
     align-items: center;
     padding-right: 35px;
 
+    @include phones {
+        flex-direction: row;
+        padding-right: 0;
+        padding-top: rem(30px);
+      }
+
     &:last-child {
         padding-right: 0;
     }
@@ -29,14 +52,57 @@
 
 .section__advertising-list__headline {
     font-family: 'Lifehack-Medium';
-    font-size: 24px;
-    text-align: center;
+    font-size: rem(24px);
+    padding-top: rem(30px);
+    @include phones {
+        text-align: left;
+        
+      }
 }
 
 .section__advertising-list__elem-text {
     font-family: 'Ubuntu-Light';
     font-size: 14px;
-    text-align: center;
+    padding-top: rem(15px);
+    @include phones {
+        text-align: left;
+        padding-top: rem(20px); 
+      }
 }
 
+.section__advertising-list__elem-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: cenetr;
+    align-items: center;
+    text-align: center;
+    width: 70%;
 
+    @include phones {
+        align-items: flex-start;
+        text-align: left;
+        justify-content: flex-start;
+        padding-left: rem(20px);
+      }
+}
+
+.section__advertising-meat-icon {
+    fill: #e25028;
+    width: rem(97px);
+    height: rem(89px);
+    width: 30%;
+}
+
+.section__advertising-hand-icon {
+    width: rem(73px);
+    height: rem(85px);
+    fill: #f8b43a;
+    width: 30%;
+}
+
+.section__advertising-natural-icon {
+    width: rem(88px);
+    height: rem(75px);
+    fill: #8ac03e;
+    width: 30%;
+}

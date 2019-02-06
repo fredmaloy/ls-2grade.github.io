@@ -6,48 +6,46 @@
     background-size: cover;
     min-height: 100vh;
     background-position: center;
+   
+    &__burger {
+        background-image: url("../../img/texture.png"), url("../../img/video-bg.png");
+    }
 
+    &__advertising {
+        background-image: url('../../img/bg.jpg');
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    &__menu {
+        background-image: url('../../img/bg_menu.jpg');
+    }
 
-        &__burger {
-            background-image: url("../../img/texture.png"),
-            url("../../img/video-bg.png");
-            /* display: flex;
-            flex-direction: column;
-            justify-content: space-between; */
-        }
+    &__team {
+        background-image: url('../../img/bg_team.jpg');
+    }
 
-        &__advertising {
-            background-image: url('../../img/bg.jpg');
-            display: flex;
-            align-items: center;
-        }
+    &__delivery {
+        background-image: url('../../img/bg_delivery.jpg');
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100%;
+    }
 
-        &__menu {
-            background-image: url('../../img/bg_menu.jpg');
-        }
-
-        &__team {
-            background-image: url('../../img/bg_team.jpg');
-        }
-
-        &__delivery {
-            background-image: url('../../img/bg_delivery.jpg');
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
-        }
-
-        &__map {
-            background-image: url('../../img/bg_map.jpg');
-        }
-
+    &__map {
+        background-image: url('../../img/bg_map.jpg');
+    }
 }
 
 .section__container {
     width: 100%;
-    max-width: 940px;
-    padding: 0 20px;
+    height: 100%;
+    max-width: rem(1000px);
+    padding: 0 rem(20px);
     margin: 0 auto;
-} 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

@@ -1,19 +1,15 @@
-.section__delivery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* .section__delivery {
     height: 100%;
-}
+} */
 
 .delivery__form {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    width: 100%;
+    max-width: 100%;
     font-family: 'Ubuntu-Light';
     font-size: rem(13px);
     color: #ffffff;
-    padding: rem(30px);
 
     @include tablets {
        flex-direction: column;
@@ -28,44 +24,30 @@
       }
 }
 
-.delivery__form-name-phone {
+
+.delivery__form-row {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    margin-top: rem(20px);
 }
 
-.delivery__form-street {
-    padding-top: rem(20px);
+
+
+.delivery__form-block {
+    margin-right: rem(20px);
+    flex: 1;
+
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.delivery__form-adress {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-top: rem(20px);
-}
-
-.input {
+.delivery__form-input {
     margin-top: rem(10px);
     height: rem(35px);
     border: none;
-    border-radius: rem(5px);
-    margin-right: rem(25px); 
-    appearance: none; 
+    border-radius: rem(5px); 
     text-indent: rem(20px);
-}
-
-.adress__input {
-    width: rem(100px);
-}
-
-.street__input {
-    min-width: rem(480px);
-}
-
-.name__input, .phone__input {
-    min-width: rem(227px);
-    -webkit-appearance: none;
+    width: 100%;
 }
 
 .delivery__form-right-part {
@@ -73,28 +55,33 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-top: rem(20px);
+    margin-left: rem(20px);
+    width: 100%;    
 
     @include tablets {
-       padding-top: rem(20px);
-       align-items: center;
+       margin-left: 0;
+       padding-left: rem(20px);
+       padding-right: rem(20px);
        }
      
        @include phones {
-        padding-top: rem(20px);
-        align-items: center;
+           align-items: center;
+        margin-left: 0;
+        padding-left: 0;
+       padding-right: 0;
        }
 }
 
 .coment__content {
     margin-top: rem(10px);
-    width: rem(470px);
+    width: 100%;
     height: rem(113px);
     border: none;
     border-radius: rem(5px);
     resize: none;
     text-indent: rem(20px);
     color: #000000;
-    margin-right: rem(25px);
 }
 
 .delivery__form-radio__btn, .delivery__form-send {
@@ -213,7 +200,12 @@
     opacity: 1;
 }
 
-.input:focus,
+.delivery__form-input:focus,
 .text:focus {
     border: rem(1px) solid #e45028;
+}
+
+.orange__headline-delivery {
+    text-align: center;
+    color: #f9b43b;
 }

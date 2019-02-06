@@ -2,6 +2,9 @@
     @return $px / 16px + 0rem;
 }
 
+/* -?\d+px
+rem($0) */
+
 @mixin tablets {
     @media screen and (max-width: 768px) {
       @content;
@@ -25,7 +28,7 @@
 
 body, html {
     height: 100vh;
-    font-size: 16px;
+    font-size: rem(16px);
     margin: 0 auto;
     width: 100vw;
     -webkit-font-smoothing: antialiased;
@@ -35,11 +38,11 @@ body, html {
 
 html {
     @include tablets {
-      font-size: 15px;
+      font-size: rem(15px);
     }
   
     @include phones {
-      font-size: 13px;
+      font-size: rem(13px);
     }
   }
 
