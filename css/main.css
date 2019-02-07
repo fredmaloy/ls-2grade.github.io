@@ -395,7 +395,7 @@ h1 { font-weight: normal; }
 
 .accirdion__team-list__elem.team__elem-active .list__name-marker:before { -webkit-transform: rotate(-180deg); -ms-transform: rotate(-180deg); transform: rotate(-180deg); -webkit-transition: linear 0.3s; -o-transition: linear 0.3s; transition: linear 0.3s; }
 
-.accirdion__team-list__elem.team__elem-active .list__elem-inf { max-height: 6.25rem; }
+.accirdion__team-list__elem.team__elem-active .list__elem-inf { max-height: 7.5rem; padding-top: 1.25rem; }
 
 @media screen and (max-width: 768px) { .accirdion__team-list__elem.team__elem-active .list__elem-inf { max-height: 15.625rem; } }
 

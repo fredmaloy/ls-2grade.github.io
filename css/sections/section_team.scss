@@ -91,7 +91,8 @@
     }
 
     &.team__elem-active .list__elem-inf {
-        max-height: rem(100px);
+        max-height: rem(120px);
+        padding-top: rem(20px);
 
         @include tablets {
             max-height: rem(250px);
