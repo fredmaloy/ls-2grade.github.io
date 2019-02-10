@@ -37,6 +37,16 @@
     &__map {
         background-image: url('../../img/bg_map.jpg');
     }
+
+    &__slider {
+        background: #f9b43b; 
+        background: -moz-linear-gradient(top, #f9b43b 0%, #eb8d38 50%, #eb8d38 52%, #f9b43b 100%); 
+        background: -webkit-linear-gradient(top, #f9b43b 0%,#eb8d38 50%,#eb8d38 52%,#f9b43b 100%); 
+        background: linear-gradient(to bottom, #f9b43b 0%,#eb8d38 50%,#eb8d38 52%,#f9b43b 100%); 
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .section__container {
