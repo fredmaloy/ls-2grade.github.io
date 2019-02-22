@@ -163,6 +163,8 @@ h1 { font-weight: normal; }
 
 .section__team { background-image: url("../../img/bg_team.jpg"); }
 
+.section__how-we-work { background-image: url("../../img/bg_howwework.jpg"); }
+
 .section__delivery { background-image: url("../../img/bg_delivery.jpg"); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; height: 100%; }
 
 .section__slider { background: #f9b43b; background: -moz-linear-gradient(top, #f9b43b 0%, #eb8d38 50%, #eb8d38 52%, #f9b43b 100%); background: -webkit-linear-gradient(top, #f9b43b 0%, #eb8d38 50%, #eb8d38 52%, #f9b43b 100%); background: -webkit-gradient(linear, left top, left bottom, from(#f9b43b), color-stop(50%, #eb8d38), color-stop(52%, #eb8d38), to(#f9b43b)); background: -o-linear-gradient(top, #f9b43b 0%, #eb8d38 50%, #eb8d38 52%, #f9b43b 100%); background: linear-gradient(to bottom, #f9b43b 0%, #eb8d38 50%, #eb8d38 52%, #f9b43b 100%); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; }
