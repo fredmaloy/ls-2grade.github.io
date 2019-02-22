@@ -1,39 +1,83 @@
 .section__slider-container {
     position: relative;
-}
-
-.section__slider-list {
+    width: rem(900px);
     display: flex;
     justify-content: center;
     align-items: center;
-    width: rem(900px);
-    position: relative;
+    
+    @include tablets {
+       width: 100vw;
+    }
+    
     @include phones {
-        max-width: 90vw;
+        width: 100vw;
+
+    }
+    
+    
+}
+
+.section__slider-slider {
+    position: relative;
+    overflow: hidden !important;
+     
+}
+
+.section__slider-list {
+    display: flex !important;
+    align-items: center !important;
+    position: relative;
+    min-height: rem(475px);
+    margin: auto 10px;
+    right: 0;
+    transition: 1s; 
+    width: 100%;
+    
+   
+    @include tablets {
+        min-height: 100%;
+    }
+    
+    @include phones {
+        max-width: 100%;
+
     }
     
     &__elem {
-        display: flex;
+        display: flex !important;
         justify-content: center;
-        flex: 1 1 auto;
+        align-items: center;
+        position: relative;
+        /* flex: 1 1 auto; */
+        /* min-width: 100%; */
+     
+            
+        
 
         &-img {
             display: flex;
             justify-content: center;
             align-items: center;
             width: 100%;
+
+            @include tablets {
+                width: 100%;
+            }
+            
             @include phones {
-                width: 90%;
+                width: 100%;        
             }
         }
         &-image {
-            max-width: 100%;
-            max-height: 100%;
+            width: 100%;
+            
         }
         &-content {
             width: 100%;
+
             @include tablets {
                 flex-direction: column;
+                justify-content: center;
                 align-items: center;
                 text-align: center;
                 width: 70%;
@@ -72,6 +116,12 @@
 
 .white__headline-slider {
     color: #ffffff;
+    
+
+    @include tablets {
+        width: 100%;
+    margin: 0 auto;
+    }
 }
 
 .slider-text {
@@ -90,25 +140,26 @@
 }
 
 .section__slider-icons {
-    position: absolute;
-    top: -20px;
-    left: 30px;
-    height: rem(475px);
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    height: rem(425px);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+
     @include tablets {
         flex-direction: row;
         height: rem(90px);
-        top: rem(-70px);
-        width: rem(475px);
+        top: 0;
+        width: rem(600px);
         left: 50%;
         transform: translate(-50%, 0);
     }
     @include phones {
         flex-direction: row;
         height: rem(90px);
-        top: rem(-70px);
+        top: -50px;
         width: rem(460px);
         left: 50%;
         transform: translate(-50%, 0);
@@ -193,13 +244,17 @@
 
                 &-close {
                     position: absolute;
-                    top: 15px;
-                    right: 15px;
+                    top: rem(-10000px);
+                    right: rem(15px);
                     
 
                     &-svg {
-                        max-width: 20px;
-                        max-height: 20px;
+                        max-width: rem(20px);
+                        max-height: rem(20px);
+                    }
+
+                    @include tablets {
+                        top: rem(15px);
                     }
                 }
                 
@@ -262,7 +317,7 @@
         position: absolute;
         width: rem(30px);
         height: rem(30px);
-        top: 40%;
+        top: 50%;
         right: rem(-50px);
         transform: rotate(-90deg);
         @include tablets {
@@ -270,7 +325,8 @@
             right: 50px;
         }
         @include phones {
-            right: -20px;
+            right: 10px;
+            top: 37%;
         }
         &__svg {
             fill: #ffffff;
@@ -290,7 +346,8 @@
             left: 50px;
         }
         @include phones {
-            left: -20px;
+            left: 10px;
+            top: 37%;
         }
         &__svg {
             fill: #ffffff;
@@ -299,3 +356,34 @@
         }
     }
 }
+
+.fp-tableCell {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.slick-track {
+    display: flex !important;
+    align-items: center !important;
+
+    /* @include tablets {
+        width: 100% !important;
+    }
+    @include phones {
+        width: 100% !important;
+    } */
+}
+
+/* .slick-slide {
+    @include tablets {
+        width: 100% !important;
+    }
+    @include phones {
+        width: 100% !important;
+    }
+} */
+
+/* .slick-list {
+    overflow: hidden !important;
+} */

@@ -1,0 +1,26 @@
+const Переиенная = getComputedStyle(элемент); - показать все стили объекта 
+let Переиенная = parsentInt(computed.стиль) - подгрузить стиль right
+if (!currentRight){
+    currentRight = 0;
+}
+
+Способ по петле
+right.addEventListner('click',function( {
+    loop('right'); - петля
+}));
+
+function loop(direction) {
+    if (direction === 'right) {
+        items.appendChild(items.firstElementChild);
+    }else{
+        items.insertBefore(items.lastElementChild,items.firstElementChild); - вставить последний элемент перед первым
+    }
+}
+
+//--------------------------------------------//
+
+17.02.2019
+
+Slick.js - готовые слайдеры.
+
+jquery 

@@ -34,14 +34,14 @@ for (var i=0; i<d.length; i++) {
     console.log(i);
 } */
 
-/* var array=[10,120,150,35,45,672,85,63,722,27];
+var array=[10,120,150,35,45,672,85,63,722,27];
 for (var i=0;i<array.length;i++) {
     if (array[i]>100) {
         console.log(array[i]);
     }
-} */
+}
 
-var form={
+/* var form={
     name: 'Сергей',
     lastName: 'Черепанов',
     age: '30'
@@ -68,6 +68,6 @@ function hello(human) {
 
 var result = hello(form) 
 
-    console.log(result)
+    console.log(result) */
 
     

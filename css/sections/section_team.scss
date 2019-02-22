@@ -5,23 +5,23 @@
     right: 0;
     height: 100%;
     width: 50%;
-    background-color: rgba(0,0,0,0.8);
+    background-color: rgba(#313436,0.9);
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-content: flex-start;
-    padding: 20vh 15vh;
+    padding: rem(200px) rem(100px);
 
     @include tablets {
+        padding: rem(300px) rem(200px);
         width: 100%;
         align-items: center;
-        padding: 5vh 15vh;
       }
     
       @include phones {
+        padding: rem(100px) rem(50px);
         width: 100%;
         align-items: center;
-        padding: 5vh 15vh;
       }
 
 }
@@ -64,8 +64,8 @@
         position: absolute;
         top: rem(10px);
         left: -15%;
-        border: 4.5px solid transparent;
-        border-top: 4.5px solid #f9b43b;
+        border: rem(4.5px) solid transparent;
+        border-top: rem(4.5px) solid #f9b43b;
         }
 }
 
