@@ -10,8 +10,10 @@
     <script src="./js/script.js"></script>
     <script src="./js/slick.js"></script>
     <script src="./js/fullpage.js"></script>
-    <script src="https://api-maps.yandex.ru/2.1/?apikey=<5a07265b-a631-421e-b245-f492c396d0bb>&lang=ru_RU" type="text/javascript">
-    </script>
+    <script src="./js/video.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=<5a07265b-a631-421e-b245-f492c396d0bb>&lang=ru_RU"
+        type="text/javascript">
+        </script>
     <script src="./js/map.js"></script>
     <title>Mr.Burger</title>
 </head>
@@ -23,7 +25,7 @@
     <div class="wrapper">
         <div class="container" id="fullpage">
             <section class="section section__burger" data-anchor="section__burger">
-                <div class="section__container">
+                <div class="section__container section__container__burger">
                     <header class="header">
                         <a href="#" class="header__logo">
                             <img src="./img/logo.png" alt="Mr.Burger" class="header_logo-img">
@@ -45,7 +47,7 @@
                                 <a href="#section__reviews" class="header__list-link">ОТЗЫВЫ</a>
                             </li>
                             <li class="header__list-elem">
-                                <a href="#" class="header__list-link">КАК МЫ РАБОТАЕМ</a>
+                                <a href="#section__how-we-work" class="header__list-link">КАК МЫ РАБОТАЕМ</a>
                             </li>
                             <li class="header__list-elem">
                                 <a href="#section__map" class="header__list-link">КОНТАКТЫ</a>
@@ -125,7 +127,7 @@
 
             <section class="section section__slider" data-anchor="section__slider">
                 <div class="section__slider-container">
-                    
+
                     <div class="section__slider-slider">
                         <ul class="section__slider-list">
                             <li class="section__slider-list__elem">
@@ -836,384 +838,426 @@
                         </ul>
                     </div>
                 </div>
-       
-        </section>
-        <section class="section section__menu" data-anchor="section__menu">
-            <h2 class="headline white__headline">Меню</h2>
-            <div class="accirdion__menu">
-                <ul class="accirdion__menu-list">
-                    <li class="accirdion__menu-list__elem">
-                        <a href="#" class="accirdion__menu-link" style="background-image: url('./img/bg_acc_1.jpg')">
-                            <span>Для мясоедов</span>
-                        </a>
-                        <div class="accirdion__menu-text"><span>Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Illum inventore laboriosam modi, voluptates eveniet expedita fugit? Facere
-                                placeat natus a ipsam dolor aut molestiae quasi? Mollitia laborum officiis cumque
-                                consequuntur.</span>
+
+            </section>
+            <section class="section section__menu" data-anchor="section__menu">
+                <h2 class="headline white__headline">Меню</h2>
+                <div class="accirdion__menu">
+                    <ul class="accirdion__menu-list">
+                        <li class="accirdion__menu-list__elem">
+                            <a href="#" class="accirdion__menu-link"
+                                style="background-image: url('./img/bg_acc_1.jpg')">
+                                <span>Для мясоедов</span>
+                            </a>
+                            <div class="accirdion__menu-text"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Illum inventore laboriosam modi, voluptates eveniet expedita fugit? Facere
+                                    placeat natus a ipsam dolor aut molestiae quasi? Mollitia laborum officiis cumque
+                                    consequuntur.</span>
+                            </div>
+                        </li>
+                        <li class="accirdion__menu-list__elem">
+                            <a href="#" class="accirdion__menu-link"
+                                style="background-image: url('./img/bg_acc_2.jpg');">
+                                <span>вегетарианское</span>
+                            </a>
+                            <div class="accirdion__menu-text"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Illum inventore laboriosam modi, voluptates eveniet expedita fugit? Facere
+                                    placeat natus a ipsam dolor aut molestiae quasi? Mollitia laborum officiis cumque
+                                    consequuntur.</span>
+                            </div>
+                        </li>
+                        <li class="accirdion__menu-list__elem">
+                            <a href="#" class="accirdion__menu-link"
+                                style="background-image: url('./img/bg_acc_3.jpg')">
+                                <span>диетическое</span>
+                            </a>
+                            <div class="accirdion__menu-text"><span>Lorem ipsum dolor sit amet consectetur adipisicing
+                                    elit. Illum inventore laboriosam modi, voluptates eveniet expedita fugit? Facere
+                                    placeat natus a ipsam dolor aut molestiae quasi? Mollitia laborum officiis cumque
+                                    consequuntur.</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="section section__reviews" data-anchor="section__reviews">
+                <ul class="reviews__list">
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-1.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Дженифер Васечкина</h3>
+                            <div class="coment__text">Далеко-далеко за словесными горами в стране гласных и согласных
+                                живут,
+                                рыбные тексты. Lorem свой собрал имеет, взобравшись то страну переулка дал моей путь,
+                                проектах коварных заманивший семь города безорфографичный все курсивных ты?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
                         </div>
                     </li>
-                    <li class="accirdion__menu-list__elem">
-                        <a href="#" class="accirdion__menu-link" style="background-image: url('./img/bg_acc_2.jpg');">
-                            <span>вегетарианское</span>
-                        </a>
-                        <div class="accirdion__menu-text"><span>Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Illum inventore laboriosam modi, voluptates eveniet expedita fugit? Facere
-                                placeat natus a ipsam dolor aut molestiae quasi? Mollitia laborum officiis cumque
-                                consequuntur.</span>
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-2.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Вася Васечкин</h3>
+                            <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident, esse
+                                deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
+                                harum.
+                                Reiciendis delectus magnam enim ad accusantium dolore?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
                         </div>
                     </li>
-                    <li class="accirdion__menu-list__elem">
-                        <a href="#" class="accirdion__menu-link" style="background-image: url('./img/bg_acc_3.jpg')">
-                            <span>диетическое</span>
-                        </a>
-                        <div class="accirdion__menu-text"><span>Lorem ipsum dolor sit amet consectetur adipisicing
-                                elit. Illum inventore laboriosam modi, voluptates eveniet expedita fugit? Facere
-                                placeat natus a ipsam dolor aut molestiae quasi? Mollitia laborum officiis cumque
-                                consequuntur.</span>
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-3.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Вася Васечкин</h3>
+                            <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident, esse
+                                deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
+                                harum.
+                                Reiciendis delectus magnam enim ad accusantium dolore?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-4.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Вася Васечкин</h3>
+                            <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident, esse
+                                deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
+                                harum.
+                                Reiciendis delectus magnam enim ad accusantium dolore?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-5.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Вася Васечкин</h3>
+                            <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident, esse
+                                deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
+                                harum.
+                                Reiciendis delectus magnam enim ad accusantium dolore?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-6.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Вася Васечкин</h3>
+                            <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident, esse
+                                deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
+                                harum.
+                                Reiciendis delectus magnam enim ad accusantium dolore?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-7.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Вася Васечкин</h3>
+                            <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident, esse
+                                deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
+                                harum.
+                                Reiciendis delectus magnam enim ad accusantium dolore?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
+                        </div>
+                    </li>
+                    <li class="section__reviews--cell" style="background-image: url(../../img/photo-8.jpg)">
+                        <div class="section__reviews--coments">
+                            <h3 class="coment__name">Вася Васечкин</h3>
+                            <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Provident, esse
+                                deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
+                                harum.
+                                Reiciendis delectus magnam enim ad accusantium dolore?</div>
+                            <a href="#" class="coment__more">
+                                <div class="coment__button">подробнее</div>
+                            </a>
                         </div>
                     </li>
                 </ul>
-            </div>
-        </section>
+            </section> <!-- section__reviews -->
 
-        <section class="section section__reviews" data-anchor="section__reviews">
-            <ul class="reviews__list">
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-1.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Дженифер Васечкина</h3>
-                        <div class="coment__text">Далеко-далеко за словесными горами в стране гласных и согласных живут,
-                            рыбные тексты. Lorem свой собрал имеет, взобравшись то страну переулка дал моей путь,
-                            проектах коварных заманивший семь города безорфографичный все курсивных ты?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
+            <section class="section section__how-we-work" data-anchor="section__how-we-work">
+                <div class="section__container section__container__how-we-work">
+                    <h2 class="headline black__headline">Как мы работаем</h2>
+                    <div class="section__how-we-work__video">
+                        <div class="video__container">
+                            <video class="video">
+                                <source src="./video/burger.mp4" type="video/mp4">
+                            </video>
+                            <div class="video__splash"></div>
+                            <div class="player__control">
+                                <div class="player__control-play">
+                                    <button class="control__btn play active">
+                                        <svg class="control__btn-svg">
+                                            <use xlink:href="img/sprite.svg#play"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="control__btn pause"></button>
+                                    <div class="conrol-play__rewind">
+                                        <input type="range" class="line rewind__line" min="0" max="100" value="0">
+                                        <!-- <div class="line rewind__line">
+                                            <div class="point point__rewind"></div>
+                                        </div> -->
+                                    </div>
+                                    <button class="control__btn volume">
+                                        <svg class="control__btn-svg">
+                                            <use xlink:href="img/sprite.svg#volum"></use>
+                                        </svg>
+                                        <div class="control__btn-volume__off"></div>
+                                    </button>
+                                    <div class="conrol-play__volume">
+                                            <input type="range" class="line volume__line" min="0" max="100" value="0">
+                                        <!-- <div class="line volume__line">
+                                            <div class="point point__volume"></div>
+                                        </div> -->
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
                     </div>
+                </div>
+            </section>
+
+            <section class="section section__delivery" data-anchor="section__delivery">
+                <div class="section__container section__container-delivery">
+                    <h2 class="headline orange__headline-delivery">Закажите доставку</h2>
+                    <form class="delivery__form">
+                        <div class="delivery__form-left-part">
+                            <div class="delivery__form-row">
+                                <label class="delivery__form-block">
+                                    <div class="delivery__form-text">Имя</div>
+                                    <input type="text" name="name" class="delivery__form-input" required>
+                                </label>
+                                <label class="delivery__form-block">
+                                    <div class="delivery__form-text">Телефон</div>
+                                    <input type="number" name="phone" class="delivery__form-input" required>
+                                </label>
+                            </div>
+                            <div class="delivery__form-row">
+                                <label class="delivery__form-block">
+                                    <div class="delivery__form-text">Улица</div>
+                                    <input type="text" name="street" class="delivery__form-input" required>
+                                </label>
+                            </div>
+                            <div class="delivery__form-row">
+                                <label class="delivery__form-block">
+                                    <div class="delivery__form-text">Дом</div>
+                                    <input type="number" name="house" class="delivery__form-input" required>
+                                </label>
+                                <label class="delivery__form-block">
+                                    <div class="delivery__form-text">Корпус</div>
+                                    <input type="text" name="additionaly" class="delivery__form-input">
+                                </label>
+                                <label class="delivery__form-block">
+                                    <div class="delivery__form-text">Квартира</div>
+                                    <input type="number" name="apartment" class="delivery__form-input" required>
+                                </label>
+                                <label class="delivery__form-block">
+                                    <div class="delivery__form-text">Этаж</div>
+                                    <input type="number" name="floor" class="delivery__form-input" required>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="delivery__form-right-part">
+                            <div class="delivery__form-coment">Коментарий</div>
+                            <textarea name="coment" class="text coment__content"></textarea>
+                            <div class="delivery__form-radio__btn">
+                                <label class="radio__btn">
+                                    <input type="radio" name="change" class="input change__input"
+                                        value="nocard"></input>
+                                    <div class="btn__change-check">
+                                        <div class="btn__change-check-see"></div>
+                                        <div class="btn__change-title">Потребуется сдача</div>
+                                    </div>
+                                </label>
+                                <label class="radio__btncard">
+                                    <input type="radio" name="change" class="input change__input" value="card"></input>
+                                    <div class="btn__change-check card">
+                                        <div class="btn__change-check-see"></div>
+                                        <div class="btn__change-title">Оплата по карте</div>
+                                    </div>
+                                </label>
+                            </div>
+                            <label class="radio__btn-dtcall">
+                                <input type="checkbox" name="dntcall" class="dtcall__input"></input>
+                                <div class="btn__dtcall-check">
+                                    <div class="btn__dtcall-check-see"></div>
+                                    <div class="btn__dtcall-title">Не перезванивать</div>
+                                </div>
+                            </label>
+                            <div class="delivery__form-send">
+                                <div class="btn-send">
+                                    <button type="submit" class="btn__deliver">
+                                        <div class="btn__send-name">Заказать</div>
+                                    </button>
+                                </div>
+                                <div class="btn-send__clean">
+                                    <button type="reset" class="btn">
+                                        <div class="btn__send-name">Очистить</div>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+            <section class="section section__map" data-anchor="section__map">
+                <div class="footer__container">
+                    <div class="map" id="map"></div>
+                    <footer class="footer">
+                        <div class="footer__contacts">
+                            <div class="footer__contacts-adress">
+                                Санкт-Петербург, ул.Бабушкина, д.12/1, 15
+                            </div>
+                            <div class="footer__contacts-phone">
+                                <svg class="footer__contacts-phone-icon">
+                                    <use xlink:href="img/sprite.svg#phone"></use>
+                                </svg>
+                                <div class="footer__contacts-number">
+                                    +7(812)377-13-77
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer__social">
+                            <ul class="footer__social-list">
+                                <li class="footer__social-list__elem">
+                                    <a href="#" class="footer__social-list__link">
+                                        <svg class="footer__contacts-icon">
+                                            <use xlink:href="img/sprite.svg#vk"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__social-list__elem">
+                                    <a href="#" class="footer__social-list__link">
+                                        <svg class="footer__contacts-icon">
+                                            <use xlink:href="img/sprite.svg#fb"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__social-list__elem">
+                                    <a href="#" class="footer__social-list__link">
+                                        <svg class="footer__contacts-icon">
+                                            <use xlink:href="img/sprite.svg#inst"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                                <li class="footer__social-list__elem">
+                                    <a href="#" class="footer__social-list__link">
+                                        <svg class="footer__contacts-icon">
+                                            <use xlink:href="img/sprite.svg#twitter"></use>
+                                        </svg>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </footer>
+                </div> <!-- footer__container -->
+            </section>
+        </div> <!-- container -->
+
+        <nav class="navigation" id="menu">
+            <ul class="navigation__list">
+                <li class="navigation__elem active" data-menuanchor="section__burger">
+                    <a href="#section__burger" class="navigation__link"></a>
                 </li>
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-2.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Вася Васечкин</h3>
-                        <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Provident, esse
-                            deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
-                            harum.
-                            Reiciendis delectus magnam enim ad accusantium dolore?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
-                    </div>
+                <li class="navigation__elem" data-menuanchor="section__advertising">
+                    <a href="#section__advertising" class="navigation__link"></a>
                 </li>
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-3.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Вася Васечкин</h3>
-                        <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Provident, esse
-                            deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
-                            harum.
-                            Reiciendis delectus magnam enim ad accusantium dolore?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
-                    </div>
+                <li class="navigation__elem" data-menuanchor="section__slider">
+                    <a href="#section__slider" class="navigation__link"></a>
                 </li>
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-4.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Вася Васечкин</h3>
-                        <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Provident, esse
-                            deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
-                            harum.
-                            Reiciendis delectus magnam enim ad accusantium dolore?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
-                    </div>
+                <li class="navigation__elem" data-menuanchor="section__team">
+                    <a href="#section__team" class="navigation__link"></a>
                 </li>
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-5.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Вася Васечкин</h3>
-                        <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Provident, esse
-                            deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
-                            harum.
-                            Reiciendis delectus magnam enim ad accusantium dolore?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
-                    </div>
+                <li class="navigation__elem" data-menuanchor="section__menu">
+                    <a href="#section__menu" class="navigation__link"></a>
                 </li>
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-6.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Вася Васечкин</h3>
-                        <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Provident, esse
-                            deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
-                            harum.
-                            Reiciendis delectus magnam enim ad accusantium dolore?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
-                    </div>
+                <li class="navigation__elem" data-menuanchor="section__reviews">
+                    <a href="#section__reviews" class="navigation__link"></a>
                 </li>
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-7.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Вася Васечкин</h3>
-                        <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Provident, esse
-                            deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
-                            harum.
-                            Reiciendis delectus magnam enim ad accusantium dolore?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
-                    </div>
+                <li class="navigation__elem" data-menuanchor="section__how-we-work">
+                    <a href="#section__how-we-work" class="navigation__link"></a>
                 </li>
-                <li class="section__reviews--cell" style="background-image: url(../../img/photo-8.jpg)">
-                    <div class="section__reviews--coments">
-                        <h3 class="coment__name">Вася Васечкин</h3>
-                        <div class="coment__text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                            Provident, esse
-                            deleniti blanditiis iste inventore, vel nulla voluptas asperiores rem est porro facilis
-                            harum.
-                            Reiciendis delectus magnam enim ad accusantium dolore?</div>
-                        <a href="#" class="coment__more">
-                            <div class="coment__button">подробнее</div>
-                        </a>
-                    </div>
+                <li class="navigation__elem" data-menuanchor="section__delivery">
+                    <a href="#section__delivery" class="navigation__link"></a>
+                </li>
+                <li class="navigation__elem" data-menuanchor="section__map">
+                    <a href="#section__map" class="navigation__link"></a>
                 </li>
             </ul>
-        </section> <!-- section__reviews -->
-
-        <section class="section section__how-we-work" data-anchor="section__how-we-work">
-            <div class="section__container section__how-we-work__container">
-                <h2 class="headline black__headline">Как мы работаем</h2>
-                <video  class="">
-                    
-                </form>
-            </div>
-        </section>
-
-        <section class="section section__delivery" data-anchor="section__delivery">
-            <div class="section__container section__container-delivery">
-                <h2 class="headline orange__headline-delivery">Закажите доставку</h2>
-                <form  class="delivery__form">
-                    <div class="delivery__form-left-part">
-                        <div class="delivery__form-row">
-                            <label class="delivery__form-block">
-                                <div class="delivery__form-text">Имя</div>
-                                <input type="text" name="name" class="delivery__form-input" required>
-                            </label>
-                            <label class="delivery__form-block">
-                                <div class="delivery__form-text">Телефон</div>
-                                <input type="number" name="phone" class="delivery__form-input" required>
-                            </label>
-                        </div>
-                        <div class="delivery__form-row">
-                            <label class="delivery__form-block">
-                                <div class="delivery__form-text">Улица</div>
-                                <input type="text" name="street" class="delivery__form-input" required>
-                            </label>
-                        </div>
-                        <div class="delivery__form-row">
-                            <label class="delivery__form-block">
-                                <div class="delivery__form-text">Дом</div>
-                                <input type="number" name="house" class="delivery__form-input" required>
-                            </label>
-                            <label class="delivery__form-block">
-                                <div class="delivery__form-text">Корпус</div>
-                                <input type="text" name="additionaly" class="delivery__form-input">
-                            </label>
-                            <label class="delivery__form-block">
-                                <div class="delivery__form-text">Квартира</div>
-                                <input type="number" name="apartment" class="delivery__form-input" required>
-                            </label>
-                            <label class="delivery__form-block">
-                                <div class="delivery__form-text">Этаж</div>
-                                <input type="number" name="floor" class="delivery__form-input" required>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="delivery__form-right-part">
-                        <div class="delivery__form-coment">Коментарий</div>
-                        <textarea name="coment" class="text coment__content"></textarea>
-                        <div class="delivery__form-radio__btn">
-                            <label class="radio__btn">
-                                <input type="radio" name="change" class="input change__input" value="nocard"></input>
-                                <div class="btn__change-check">
-                                    <div class="btn__change-check-see"></div>
-                                    <div class="btn__change-title">Потребуется сдача</div>
-                                </div>
-                            </label>
-                            <label class="radio__btncard">
-                                <input type="radio" name="change" class="input change__input" value="card"></input>
-                                <div class="btn__change-check card">
-                                    <div class="btn__change-check-see"></div>
-                                    <div class="btn__change-title">Оплата по карте</div>
-                                </div>
-                            </label>
-                        </div>
-                        <label class="radio__btn-dtcall">
-                            <input type="checkbox" name="dntcall" class="dtcall__input"></input>
-                            <div class="btn__dtcall-check">
-                                <div class="btn__dtcall-check-see"></div>
-                                <div class="btn__dtcall-title">Не перезванивать</div>
-                            </div>
-                        </label>
-                        <div class="delivery__form-send">
-                            <div class="btn-send">
-                                <button type="submit" class="btn__deliver">
-                                    <div class="btn__send-name">Заказать</div>
-                                </button>
-                            </div>
-                            <div class="btn-send__clean">
-                                <button type="reset" class="btn">
-                                    <div class="btn__send-name">Очистить</div>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <section class="section section__map" data-anchor="section__map">
-            <div class="footer__container">
-                    <div class="map" id="map"></div>
-                <footer class="footer">
-                    <div class="footer__contacts">
-                        <div class="footer__contacts-adress">
-                            Санкт-Петербург, ул.Бабушкина, д.12/1, 15
-                        </div>
-                        <div class="footer__contacts-phone">
-                            <svg class="footer__contacts-phone-icon">
-                                <use xlink:href="img/sprite.svg#phone"></use>
-                            </svg>
-                            <div class="footer__contacts-number">
-                                +7(812)377-13-77
-                            </div>
-                        </div>
-                    </div>
-                    <div class="footer__social">
-                        <ul class="footer__social-list">
-                            <li class="footer__social-list__elem">
-                                <a href="#" class="footer__social-list__link">
-                                    <svg class="footer__contacts-icon">
-                                        <use xlink:href="img/sprite.svg#vk"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__social-list__elem">
-                                <a href="#" class="footer__social-list__link">
-                                    <svg class="footer__contacts-icon">
-                                        <use xlink:href="img/sprite.svg#fb"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__social-list__elem">
-                                <a href="#" class="footer__social-list__link">
-                                    <svg class="footer__contacts-icon">
-                                        <use xlink:href="img/sprite.svg#inst"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                            <li class="footer__social-list__elem">
-                                <a href="#" class="footer__social-list__link">
-                                    <svg class="footer__contacts-icon">
-                                        <use xlink:href="img/sprite.svg#twitter"></use>
-                                    </svg>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </footer>
-            </div> <!-- footer__container -->
-        </section>
-    </div> <!-- container -->
-    
-    <nav class="navigation" id="menu">
-        <ul class="navigation__list">
-            <li class="navigation__elem active" data-menuanchor="section__burger">
-                <a href="#section__burger" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="section__advertising">
-                <a href="#section__advertising" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="section__slider">
-                <a href="#section__slider" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="section__team">
-                <a href="#section__team" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="section__menu">
-                <a href="#section__menu" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="section__reviews">
-                <a href="#section__reviews" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="section__delivery">
-                <a href="#" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="#">
-                <a href="#section__delivery" class="navigation__link"></a>
-            </li>
-            <li class="navigation__elem" data-menuanchor="section__map">
-                <a href="#section__map" class="navigation__link"></a>
-            </li>
-        </ul>
-    </nav>
-    <div class="hamburger__menu-drop" id="menuDrop">
-        <a href="#" class="header__logo drop__menu">
-            <img src="./img/logo.png" alt="Mr.Burger" class="header_logo-img drop__menu-logo">
-        </a>
-        <a href="#" class="drop__close" id="close-mobile">
-            <svg class="drop__close-svg" style="fill:#c0c1c2">
-                <use xlink:href="img/sprite.svg#close"></use>
-            </svg>
-        </a>
-        <ul class="hamburger__menu-list">
-            <li class="hamburger__menu-list__elem">
-                <a href="#section__advertising" class="hamburger__menu-list__link">О НАС</a>
-            </li>
-            <li class="hamburger__menu-list__elem">
-                <a href="#section__slider" class="hamburger__menu-list__link">БУРГЕРЫ</a>
-            </li>
-            <li class="hamburger__menu-list__elem">
-                <a href="#section__team" class="hamburger__menu-list__link">КОМАНДА</a>
-            </li>
-            <li class="hamburger__menu-list__elem">
-                <a href="#section__menu" class="hamburger__menu-list__link">МЕНЮ</a>
-            </li>
-            <li class="hamburger__menu-list__elem">
-                <a href="#" class="hamburger__menu-list__link">ОТЗЫВЫ</a>
-            </li>
-            <li class="hamburger__menu-list__elem">
-                <a href="#section__reviews" class="hamburger__menu-list__link">КАК МЫ РАБОТАЕМ</a>
-            </li>
-            <li class="hamburger__menu-list__elem">
-                <a href="#section__map" class="hamburger__menu-list__link">КОНТАКТЫ</a>
-            </li>
-        </ul>
-    </div>
-
-    <div class="popup reviews__popup">
-        <div class="popup__overlay popup__overlay-reviews">
-            <a href="#" class="popup__close-link">
-                <svg class="popup__close-svg" style="fill:#ec876b">
+        </nav>
+        <div class="hamburger__menu-drop" id="menuDrop">
+            <a href="#" class="header__logo drop__menu">
+                <img src="./img/logo.png" alt="Mr.Burger" class="header_logo-img drop__menu-logo">
+            </a>
+            <a href="#" class="drop__close" id="close-mobile">
+                <svg class="drop__close-svg" style="fill:#c0c1c2">
                     <use xlink:href="img/sprite.svg#close"></use>
                 </svg>
             </a>
-            <h3 class="coment__name coment__name-popup"></h3>
-            <p class="popup__text"></p>
+            <ul class="hamburger__menu-list">
+                <li class="hamburger__menu-list__elem">
+                    <a href="#section__advertising" class="hamburger__menu-list__link">О НАС</a>
+                </li>
+                <li class="hamburger__menu-list__elem">
+                    <a href="#section__slider" class="hamburger__menu-list__link">БУРГЕРЫ</a>
+                </li>
+                <li class="hamburger__menu-list__elem">
+                    <a href="#section__team" class="hamburger__menu-list__link">КОМАНДА</a>
+                </li>
+                <li class="hamburger__menu-list__elem">
+                    <a href="#section__menu" class="hamburger__menu-list__link">МЕНЮ</a>
+                </li>
+                <li class="hamburger__menu-list__elem">
+                    <a href="#section__reviews" class="hamburger__menu-list__link">ОТЗЫВЫ</a>
+                </li>
+                <li class="hamburger__menu-list__elem">
+                    <a href="#section__how-we-work" class="hamburger__menu-list__link">КАК МЫ РАБОТАЕМ</a>
+                </li>
+                <li class="hamburger__menu-list__elem">
+                    <a href="#section__map" class="hamburger__menu-list__link">КОНТАКТЫ</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="popup form__popup">
-        <div class="popup__overlay popup__overlay-form">
-            <p class="popup__text popup__text-form"><!-- Заказ принят!!! --></p>
-            <button type="submit" class="btn__deliver btn__popup-form-close">
-                <div class="btn__send-name">Закрыть</div>
-            </button>
+
+        <div class="popup reviews__popup">
+            <div class="popup__overlay popup__overlay-reviews">
+                <a href="#" class="popup__close-link">
+                    <svg class="popup__close-svg" style="fill:#ec876b">
+                        <use xlink:href="img/sprite.svg#close"></use>
+                    </svg>
+                </a>
+                <h3 class="coment__name coment__name-popup"></h3>
+                <p class="popup__text"></p>
+            </div>
         </div>
-    </div>
-    
-</div>  <!-- wrapper -->
+        <div class="popup form__popup">
+            <div class="popup__overlay popup__overlay-form">
+                <p class="popup__text popup__text-form">
+                    <!-- Заказ принят!!! -->
+                </p>
+                <button type="submit" class="btn__deliver btn__popup-form-close">
+                    <div class="btn__send-name">Закрыть</div>
+                </button>
+            </div>
+        </div>
+
+    </div> <!-- wrapper -->
 </body>
 
 </html>
