@@ -5,6 +5,14 @@ function ready() {
 
     var button = document.getElementById('drop');
     var close = document.getElementById('close-mobile');
+    var itemHamburgerMenu = document.querySelectorAll('.hamburger__menu-list__elem');
+
+   for (const itemsHamburgerMenu of itemHamburgerMenu) {
+            itemsHamburgerMenu.addEventListener('click', () => {
+            menuMobile = document.getElementById('menuDrop');
+            menuMobile.classList.remove('active');
+        });
+    };
 
 
     button.addEventListener('click', function (event) {
