@@ -1,0 +1,59 @@
+var formOrder = document.querySelector('.order__form');
+var formButtonOrder = document.querySelector('.form__block-submit');
+var formPopap = document.querySelector('.form-popap');
+var formPopapText = document.querySelector('.form-popap__text');
+
+formButtonOrder.addEventListener('click', (event) =>{
+   event.preventDefault();
+
+   if (validateForm(formOrder)) {
+       var formData = new FormData(document.forms.formOrder);
+       formData.append("to","ssadina@list.ru");
+
+       const xhr = new XMLHttpRequest();
+       xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');
+       xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+       xhr.send(formData);
+
+       xhr.responseType = 'json';
+
+       xhr.addEventListener('load', ()=>{
+           if (xhr.response.status){
+               formPopapText.textContent = "Сообщение отправлено";
+               formPopap.classList.add('opened');
+           } else {
+               formPopapText.textContent = "Что-то пошло не так";
+               formPopap.classList.add('opened');
+           }
+        });
+
+       // xhr.send(JSON.stringify(data));
+
+   };
+});
+
+closed(formPopap);
+
+function validateForm(form){
+   var valid = true;
+   if(!validateField(form.elements.name)){
+       valid = false;
+   }
+   if(!validateField(form.elements.phone)){
+       valid = false;
+   }
+   if(!validateField(form.elements.street)){
+       valid = false;
+   }
+
+   return valid;
+};
+function validateField(field){
+   if (!field.checkValidity()){
+       field.nextElementSibling.textContent = field.validationMessage;
+       return false;
+   } else{
+       field.nextElementSibling.textContent = '';
+       return true;
+   };
+};

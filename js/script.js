@@ -197,6 +197,7 @@ function ready() {
 
 
     popupForm.addEventListener('click', function(event) {  //Навешиваем событие
+
             event.preventDefault();
 
             let popupFormText = document.querySelector('.popup__text-form');
@@ -207,12 +208,17 @@ function ready() {
                 formSend.append('to','fredmaloy@mail.ru');
                 
                 const xhr = new XMLHttpRequest();
-                xhr.responseType = 'json';
-                xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');        /* https://webdev-api.loftschool.com/sendmail/fail */
+                
+               /*  xhr.send(JSON.stringify(formSend)); */
+                xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');        /* https://webdev-api.loftschool.com/sendmail/fail */
+                xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
                 xhr.send(formSend);
+
+                xhr.responseType = 'json';
+
                 xhr.addEventListener('load', () => {
-                    console.log(xhr.status);
-                    if (xhr.status) {
+                    
+                    if (xhr.response.status) {
                         console.log('все ок на сервере');
                         popupFormWindow.style.top = '0'; //добавляем стили
                         popupFormWindow.style.opacity = '1'; //добавляем стили 
@@ -222,6 +228,9 @@ function ready() {
                         popupFormWindow.style.top = '0'; //добавляем стили
                         popupFormWindow.style.opacity = '1';
                     };
+
+                    console.log(xhr.response.status);
+
                 });
                 console.log("все ок");
             }else{
@@ -260,6 +269,11 @@ function ready() {
             if (!validateField(form.elements.floor)) {
                 valid = false;
                 console.log('поле этаж ошибка');
+            }
+
+            if (!validateField(form.elements.comment)) {
+                valid = false;
+                console.log('поле rкомментарий ошибка');
             }
 
             return valid;
