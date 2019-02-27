@@ -210,7 +210,7 @@ function ready() {
                 const xhr = new XMLHttpRequest();
                 
                /*  xhr.send(JSON.stringify(formSend)); */
-                xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail/fail');        /* https://webdev-api.loftschool.com/sendmail/fail */
+                xhr.open('POST', 'https://webdev-api.loftschool.com/sendmail');        /* https://webdev-api.loftschool.com/sendmail/fail */
                 xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
                 xhr.send(formSend);
 
