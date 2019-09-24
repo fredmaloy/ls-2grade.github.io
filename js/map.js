@@ -1,4 +1,4 @@
-function ready() {
+; function ready() {
     ymaps.ready(function () {
         var myMap = new ymaps.Map('map', {
                 center: [61.265924, 73.373046],
@@ -78,6 +78,8 @@ function ready() {
             .add(myPlacemarkWithContent)
             .add(myPlacemarkWithContent2);
     });
+
+    document.addEventListener("DOMContentLoaded", ymaps);
 }
 
 document.addEventListener("DOMContentLoaded", ready);

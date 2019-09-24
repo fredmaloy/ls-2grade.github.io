@@ -1,4 +1,3 @@
-
 function ready() {
 
     let videoPlayer = document.querySelector('.video');
@@ -7,11 +6,12 @@ function ready() {
     let pauseVideo = document.querySelector('.pause');
     let progress = document.querySelector('.rewind__line');
     let videoContainer = document.querySelector('.video__container');
-    
+    let videoPlayerControl = document.querySelector('.player__control');
 
     let videoFlag = false;
 
-    videoOn.addEventListener('click', e => {    // события по клику на кнопку play
+    let videOnContainer = (e) => {
+        e.stopPropagation();
         e.preventDefault();
         if (!videoFlag) {                         
             videoPlayer.play();
@@ -29,9 +29,15 @@ function ready() {
             videoPlayer.classList.add('off');
 
         }
-    });
+    };
 
-    progress.addEventListener('input', () => { //перемотка видео по кликам на инпут
+    videoOn.addEventListener('click', videOnContainer);
+    videoContainer.addEventListener('click', videOnContainer);
+
+    
+
+    progress.addEventListener('input', (e) => { //перемотка видео по кликам на инпут
+        e.stopPropagation();
         videoPlayer.currentTime = Math.floor((videoPlayer.duration / 100) * progress.value);
     });
 
@@ -40,14 +46,14 @@ function ready() {
         progress.value = percent;
     });
 
-    
     let volumeVideoOff = document.querySelector('.control__btn-volume__off');
     let volumeLevel = document.querySelector('.volume__line');
     let volumeVideoOn = document.querySelector('.volume-on');
 
     let volumeFlag = false;
 
-    volumeVideoOn.addEventListener('click', e => { // Событие по клику на кгопку звука
+    volumeVideoOn.addEventListener('click', (e) => { // Событие по клику на кгопку звука
+        e.stopPropagation();
         e.preventDefault();
         if (!volumeFlag) {
             videoPlayer.volume = 0;
@@ -60,10 +66,14 @@ function ready() {
         }
     });
 
-    volumeLevel.addEventListener('input' , () => { // изменение уровня громкости
+    videoPlayerControl.addEventListener('click' , (e) => { 
+        e.stopPropagation();
+        console.log('!');
+    });
+
+    volumeLevel.addEventListener('input' , (e) => { // изменение уровня громкости
+        e.stopPropagation();
         videoPlayer.volume = volumeLevel.value / 100;
     });
-    
-
 };
 document.addEventListener("DOMContentLoaded", ready);
