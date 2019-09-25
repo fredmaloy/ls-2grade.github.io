@@ -8,26 +8,26 @@
     background-position: center;
    
     &__burger {
-        background-image: url("../../img/texture.png"), url("../../img/video-bg.png");
+        background-image: url("./img/texture.png"), url("./img/video-bg.png");
     }
 
     &__advertising {
-        background-image: url('../../img/bg.jpg');
+        background-image: url('./img/bg.jpg');
         display: flex;
         align-items: center;
         justify-content: center;
     }
 
     &__menu {
-        background-image: url('../../img/bg_menu.jpg');
+        background-image: url('./img/bg_menu.jpg');
     }
 
     &__team {
-        background-image: url('../../img/bg_team.jpg');
+        background-image: url('./img/bg_team.jpg');
     }
 
     &__how-we-work {
-        background-image: url('../../img/bg_howwework.jpg');
+        background-image: url('./img/bg_howwework.jpg');
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -36,7 +36,7 @@
     }
 
     &__delivery {
-        background-image: url('../../img/bg_delivery.jpg');
+        background-image: url('./img/bg_delivery.jpg');
         display: flex;
         flex-direction: column;
         justify-content: center;
