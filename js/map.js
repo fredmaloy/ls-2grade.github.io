@@ -20,7 +20,7 @@
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#image',
                 // Своё изображение иконки метки.
-                iconImageHref: '../icons/map-marker.svg',
+                iconImageHref: './icons/map-marker.svg',
                 // Размеры метки.
                 iconImageSize: [48, 48],
                 // Смещение левого верхнего угла иконки относительно
@@ -37,7 +37,7 @@
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#imageWithContent',
                 // Своё изображение иконки метки.
-                iconImageHref: '../icons/map-marker.svg',
+                iconImageHref: '../../icons/map-marker.svg',
                 // Размеры метки.
                 iconImageSize: [48, 48],
                 // Смещение левого верхнего угла иконки относительно
