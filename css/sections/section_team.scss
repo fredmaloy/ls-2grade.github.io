@@ -1,0 +1,178 @@
+.block__team {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    background-color: rgba(#313436,0.9);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: flex-start;
+    padding: rem(200px) rem(100px);
+
+    @include tablets {
+        padding: rem(300px) rem(200px);
+        width: 100%;
+        align-items: center;
+      }
+    
+      @include phones {
+        padding: rem(100px) rem(50px);
+        width: 100%;
+        align-items: center;
+      }
+
+}
+
+.accirdion__team-list {
+    list-style: none;
+    padding-left: rem(20px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    @include tablets {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+
+      }
+    
+      @include phones {
+        width: 100%;
+        align-items: center;
+      }
+
+}
+
+.accirdion__team-list__name {
+    text-decoration: none;
+    color: #ffffff;
+    padding-bottom: rem(18px);
+    font-family: 'Gagalin-Regular';
+}
+
+.list__name-marker {
+    position: relative;
+    font-family: 'Gagalin-Regular';
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: rem(10px);
+        left: -15%;
+        border: rem(4.5px) solid transparent;
+        border-top: rem(4.5px) solid #f9b43b;
+        }
+}
+
+.accirdion__team-list__elem {
+    padding-top: rem(35px);
+    color: #ffffff;
+    position: relative;
+
+    @include tablets {
+        text-align: center;
+ 
+       }
+     
+       @include phones {
+         width: 100%;
+         align-items: center;
+       }
+
+
+    &.team__elem-active .list__name-marker:before {
+        transform: rotate(-180deg);
+        transition: linear 0.3s; 
+    }
+
+    &.team__elem-active .list__elem-inf {
+        max-height: rem(120px);
+        padding-top: rem(20px);
+
+        @include tablets {
+            max-height: rem(250px);
+          }
+        
+          @include phones {
+            max-height: rem(250px);
+          }
+    }
+
+    &.team__elem-active .accirdion__team-list__name {
+        color: #f9b43b;
+    }
+}
+
+.list__elem-inf {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include tablets {
+        flex-direction: column;
+      }
+    
+      @include phones {
+        flex-direction: column;
+      }
+}
+
+.list__elem-content {
+    padding-left: rem(21px);
+
+    .list__elem-content__text {
+        text-color: #ffffff;
+        margin-bottom: 0;
+    }
+
+    @include tablets {
+       text-align: center;
+       margin-top: rem(20px);
+       padding-left: 0;
+      }
+    
+      @include phones {
+        text-align: center;
+        margin-top: rem(20px);
+        padding-left: 0;
+      }
+}
+
+.list__elem-photo__circle {
+    min-width: rem(100px);
+    min-height: rem(100px);
+    border-radius: 50%;
+    background-position: center;
+}
+
+.list__elem-content__prof {
+    font-family: 'Ubuntu-Bold';
+    font-size: rem(14px);
+}
+
+.list__elem-content__text {
+    font-family: 'Ubuntu-Light';
+    font-size: rem(14px);
+}
+
+.list__elem-inf {
+    overflow: hidden;
+    max-height: 0;
+    transition: 0.3s;
+
+    .list__elem-photo__circle {
+        display: inline-block;
+        max-height: rem(100px);
+    }
+
+    .list__elem-content {
+        display: inline-block;
+        max-height: rem(100px);
+    }
+}   
+

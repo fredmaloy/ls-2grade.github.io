@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="./DOM.js"></script>
+</head>
+<body>
+    <div class="wrapper" id="wrapperid">
+        Моя страница!!!
+    </div>
+    <script>
+        var element = document.createElement('div');
+            var wrapper = document.querySelector('.wrapper');
+
+        element.textContent =  'Этот элемент создан при помощи DOM API'
+        
+        wrapper.appendChild(element);
+
+        /* конец первого задания */
+
+        
+        var element2 = document.createElement('div');
+
+        element2.className = 'inner';
+        element2.textContent =  'Этот элемент тоже создан при помощи DOM API'
+        
+        element.appendChild(element2);
+
+         /* конец второго задания */
+
+        element2.style.color = 'red';
+
+         /* конец третьего задания */
+
+        
+        element.addEventListener('click', function() {
+            console.log('Этот текст говорит о том, что я всё сделал правильно');
+        });
+
+        /* конец четвертого задания */
+
+        let link = document.createElement('a');
+        link.href = 'https://loftschool.com';
+        link.textContent = 'ссыль';
+        wrapper.appendChild(link);
+
+        link.addEventListener('click', function(event) {
+            console.log('Я кликнул на ссылку https://loftschool.com');
+            event.preventDefault();
+        });
+
+        /* конец пятого задания */
+
+        let input = document.createElement('input');
+        let button = document.createElement('button');
+
+        input.id = 'inf';
+        button.id = 'btn';
+
+        button.textContent = 'Кнопка';
+
+        wrapper.appendChild(input);
+        wrapper.appendChild(button);
+
+        const v = document.getElementById('inf').value;
+
+
+        button.addEventListener('click', function() {
+           
+            console.log(v);
+        });
+
+          /* конец шестого задания */
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,215 @@
+/* .section__delivery {
+    height: 100%;
+} */
+
+.delivery__form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 100%;
+    font-family: 'Ubuntu-Light';
+    font-size: rem(13px);
+    color: #ffffff;
+
+    @include tablets {
+       flex-direction: column;
+       align-items: center;
+       width: auto;
+      }
+    
+      @include phones {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+      }
+}
+
+
+.delivery__form-row {
+    display: flex;
+    margin-top: rem(20px);
+}
+
+
+
+.delivery__form-block {
+    margin-right: rem(20px);
+    flex: 1;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.delivery__form-input {
+    margin-top: rem(10px);
+    height: rem(35px);
+    border: none;
+    border-radius: rem(5px); 
+    text-indent: rem(20px);
+    width: 100%;
+}
+
+.delivery__form-right-part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: rem(20px);
+    margin-left: rem(20px);
+    width: 100%;    
+
+    @include tablets {
+       margin-left: 0;
+       padding-left: rem(20px);
+       padding-right: rem(20px);
+       }
+     
+       @include phones {
+           align-items: center;
+        margin-left: 0;
+        padding-left: 0;
+       padding-right: 0;
+       }
+}
+
+.coment__content {
+    margin-top: rem(10px);
+    width: 100%;
+    height: rem(113px);
+    border: none;
+    border-radius: rem(5px);
+    resize: none;
+    text-indent: rem(20px);
+    color: #000000;
+}
+
+.delivery__form-radio__btn, .delivery__form-send {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: rem(20px);
+}
+
+.change__input, .dtcall__input {
+    display: none;
+}
+
+.radio__btn-dtcall {
+    margin-top: rem(30px);
+}
+
+.btn-send__clean {
+    margin-left: rem(20px);
+}
+
+.btn {
+    padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+   
+
+    &__deliver {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        border: none;
+        color: #ffffff;
+        font-size: rem(13px);
+        text-transform: uppercase;
+        height: rem(35px);
+        width: rem(100px);
+        background-color: #e45028;
+        border-radius: rem(5px);
+        cursor: pointer;
+
+        &:hover {
+            background-color: #c1401e;
+        }
+    }
+}
+
+
+.btn__change-check, .radio__btn-dtcall, .btn__dtcall-check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    padding-left: rem(20px);
+}
+
+.btn__dtcall-title, .btn__change-title {
+    padding-left: rem(10px);
+}
+
+.btn__change-check-see {
+    position: relative;
+    content: '';
+    width: rem(14px);
+    height: rem(14px);
+    background-color: #ffffff;
+    border-radius: 50%;
+
+    &:after {
+        position: absolute;
+        content: '';
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(7px);
+        height: rem(7px);   
+        border-radius: 50%;
+        background-color: #e45028;
+        opacity: 0; 
+    }
+}
+
+.change__input:checked + .btn__change-check .btn__change-check-see:after {
+    opacity: 1;
+}
+
+.btn__dtcall-check-see {
+    position: relative;
+    content: '';
+    width: rem(14px);
+    height: rem(14px);
+    background-color: #ffffff;
+
+    &:after {
+        position: absolute;
+        content: '';
+        background-image: url('../../icons/check_deliver.jpg');
+        background-repeat: no-repeat;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(11px);
+        height: rem(9px);   
+        opacity: 0;
+    }
+    
+}
+
+.dtcall__input:checked + .btn__dtcall-check .btn__dtcall-check-see:after {
+    opacity: 1;
+}
+
+.delivery__form-input:focus,
+.text:focus {
+    border: rem(1px) solid #e45028;
+}
+
+.orange__headline-delivery {
+    text-align: center;
+    color: #f9b43b;
+}
+
+.section__container-delivery {
+    justify-content: center;
+}
