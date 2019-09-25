@@ -37,7 +37,7 @@
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#imageWithContent',
                 // Своё изображение иконки метки.
-                iconImageHref: '../../icons/map-marker.svg',
+                iconImageHref: './icons/map-marker.svg',
                 // Размеры метки.
                 iconImageSize: [48, 48],
                 // Смещение левого верхнего угла иконки относительно
@@ -58,7 +58,7 @@
                 // Необходимо указать данный тип макета.
                 iconLayout: 'default#imageWithContent',
                 // Своё изображение иконки метки.
-                iconImageHref: 'https://github.com/fredmaloy/ls-2grade.github.io/blob/master/icons/map-marker.svg',
+                iconImageHref: './icons/map-marker.svg',
                 // Размеры метки.
                 iconImageSize: [48, 48],
                 // Смещение левого верхнего угла иконки относительно

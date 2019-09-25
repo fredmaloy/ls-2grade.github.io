@@ -115,7 +115,7 @@ template { display: none; }
 
 @font-face { font-family: 'Ubuntu-Medium'; src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff"); font-weight: 200; font-style: normal; }
 
-@font-face { font-family: 'Gagalin-Regular'; src: url("../fonts/Gagalin-Regular.woff2") format("woff2"), url("../fonts/Gagalin-Regular.woff") format("woff"); font-weight: 350; font-style: normal; }
+@font-face { font-family: 'Gagalin-Regular'; src: url("https://github.com/fredmaloy/ls-2grade.github.io/blob/master/fonts/gagalin-regular.woff2") format("woff2"), url("https://github.com/fredmaloy/ls-2grade.github.io/blob/master/fonts/gagalin-regular.woff") format("woff"); font-weight: 350; font-style: normal; }
 
 @font-face { font-family: 'Lifehack-Medium'; src: url("../fonts/Lifehack-Medium.woff2") format("woff2"), url("../fonts/Lifehack-Medium.woff") format("woff"); font-weight: 250; font-style: normal; }
 
