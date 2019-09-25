@@ -2,10 +2,10 @@
     justify-content: center;
     align-items: center;
 
-    @include phones {
+    /* @include phones {
         width: 95%;
         text-align: center;
-    }
+    } */
 }
 
 .video__container {
@@ -14,8 +14,8 @@
     position: relative;
 
     &.off {
-        background-image: url(../../img/screen_saver.png);
-        background-size: contain; 
+        background-image: url('../img/screen_saver.png');
+        background-size: contain;
         background-position-y: center;
         background-repeat: no-repeat;
     }
@@ -96,6 +96,7 @@
     @include tablets {
         display: none;
     }
+
     @include phones {
         display: none;
     }
@@ -116,17 +117,17 @@
     transform: translateY(-50%);
 
     &:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: rem(5px);
-    width: rem(3px);
-    height: rem(12px);
-    border-radius: rem(2px);
-    background: #626262;
-    padding: 0;
+        position: absolute;
+        content: '';
+        top: 0;
+        left: rem(5px);
+        width: rem(3px);
+        height: rem(12px);
+        border-radius: rem(2px);
+        background: #626262;
+        padding: 0;
     }
-    
+
     &.active {
         display: block;
         z-index: 1000;
@@ -141,14 +142,14 @@
     height: rem(5px);
     background-color: #626262;
     border-radius: rem(3px);
-    -webkit-appearance: none; 
-    
+    -webkit-appearance: none;
+
     &::-webkit-slider-thumb {
-      width: rem(12px);
-      height: rem(12px);
-      border-radius: 50%;
-      background-color:  #626262;
-      -webkit-appearance: none; 
+        width: rem(12px);
+        height: rem(12px);
+        border-radius: 50%;
+        background-color: #626262;
+        -webkit-appearance: none;
     }
 }
 
@@ -158,6 +159,7 @@
     @include tablets {
         margin-right: rem(20px);
     }
+
     @include phones {
         margin-right: rem(20px);
     }
@@ -220,7 +222,7 @@
     border-radius: rem(2px);
     background: red;
     padding: 0;
-    
+
 
     &:after {
         position: absolute;
@@ -233,11 +235,11 @@
         border-radius: rem(2px);
         background: red;
         padding: 0;
-       
+
     }
 
     &.active {
-        display: block;        
+        display: block;
     }
 }
 
@@ -245,8 +247,8 @@
     @include tablets {
         display: none;
     }
+
     @include phones {
         display: none;
     }
 }
-
