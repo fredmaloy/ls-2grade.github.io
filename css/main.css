@@ -115,7 +115,7 @@ template { display: none; }
 
 @font-face { font-family: 'Ubuntu-Medium'; src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
 
-@font-face { font-family: 'Gagalin-Regular'; src: url("./fonts/Gagalin-Regular.woff2") format("woff2"), url("./fonts/Gagalin-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Gagalin-Regular'; src: url("../fonts/gagalin.woff2") format("woff2"), url("../fonts/gagalin.woff") format("woff"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'Lifehack-Medium'; src: url("../fonts/Lifehack-Medium.woff2") format("woff2"), url("../fonts/Lifehack-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
 
