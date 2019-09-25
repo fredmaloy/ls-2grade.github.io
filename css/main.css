@@ -115,7 +115,7 @@ template { display: none; }
 
 @font-face { font-family: 'Ubuntu-Medium'; src: url("../fonts/Ubuntu-Medium.woff2") format("woff2"), url("../fonts/Ubuntu-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
 
-@font-face { font-family: 'Gagalin-Regular'; src: url("../fonts/Gagalin-Regular.woff2") format("woff2"), url("../fonts/Gagalin-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'Gagalin'; src: url("../fonts/Gagalin-Regular.woff2") format("woff2"), url("../fonts/Gagalin-Regular.woff") format("woff"); font-weight: normal; font-style: normal; }
 
 @font-face { font-family: 'Lifehack-Medium'; src: url("../fonts/Lifehack-Medium.woff2") format("woff2"), url("../fonts/Lifehack-Medium.woff") format("woff"); font-weight: 500; font-style: normal; }
 
@@ -265,7 +265,7 @@ h1 { font-weight: normal; }
 
 @media screen and (max-width: 480px) { .banner__headline { padding-top: 1.25rem; float: none; width: auto; } }
 
-.headline { font-family: 'Gagalin-Regular'; font-size: 4.5rem; margin: 0; }
+.headline { font-family: 'Gagalin'; font-size: 4.5rem; margin: 0; }
 
 @media screen and (max-width: 768px) { .headline { font-size: 3.75rem; } }
 
